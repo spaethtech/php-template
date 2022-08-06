@@ -1,5 +1,4 @@
-# IDE
-
+# spaethtech/composer
 
 ## Terminals
 
