@@ -3,5 +3,5 @@
 
 ## Terminals
 
-See the documentation for [Terminals](terminals/README.md)
+See the documentation for [Terminals](ide/terminals/README.md)
 
