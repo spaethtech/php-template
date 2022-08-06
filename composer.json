@@ -23,6 +23,6 @@
         "composer/composer": "^2"
     },
     "extra": {
-        "class": "SpaethTech\\Terminal\\Composer\\TerminalPlugin"
+        "class": "SpaethTech\\Composer\\Terminal\\TerminalPlugin"
     }
 }

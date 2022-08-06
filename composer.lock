@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0790147a4295f85c7a6501eff830a793",
+    "content-hash": "d8e9c8cfc9895935a862b2880ad4a873",
     "packages": [
         {
             "name": "spaethtech/common",
