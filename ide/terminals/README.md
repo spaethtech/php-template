@@ -5,10 +5,6 @@
 This configuration will likely work on any of the IntelliJ-based IDEs, but PHPStorm makes the most sense for UCRM Plugin
 development.
 
-> _**IMPORTANT**: Currently, PhpStorm's Terminal settings are application-wide and by configuring ny of the following you
-> will have to revert to the built-in terminals in any other opened projects.  The alternative is to include the `bin`
-> folder in other projects._
-
 Navigate to the correct area of settings:
 
 ```
@@ -23,6 +19,11 @@ _The below options append the following to the `PATH` environment variable in an
 
 Choose one of the following, depending upon your preferred terminal.
 
+> _**IMPORTANT**: Currently, PhpStorm's Terminal settings are application-wide and configuring any of the following
+> will apply to ALL projects._
+>
+> _Due to this limitation, the commands below include a fallback in the case of a missing terminal folder or script._
+
 ## CMD
 Shell Path
 ```
@@ -30,12 +31,21 @@ cmd /k ide\terminals\cmd.bat || cls
 ```
 
 ## PowerShell 7
+
+> _**NOTE:** Newer versions of PhpStorm occasionally issue a terminal warning if you attempt to use a PowerShell version
+> prior to v3._
+
+Available at [PowerShell 7](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.2)
+
 Shell Path
 ```
 pwsh -NoExit -Command "ide\terminals\powershell.ps1 || cls"
 ```
 
 ## Cmder
+
+Check out _[Cmder](https://github.com/cmderdev/cmder) for the download and instructions._
+
 Environment Variables (if not set in PATH already)
 ```
 CMDER_ROOT={CMDER_PATH}
@@ -46,6 +56,9 @@ cmd /k ide\terminals\cmder.cmd || cls && call \"%CMDER_ROOT%\vendor\init.bat\"
 ```
 
 ## Git Bash
+
+Included with the [Git for Windows](https://gitforwindows.org/) installation.
+
 Shell Path
 ```
 C:\Program Files\Git\bin\bash.exe --rcfile ide/terminals/.bashrc
