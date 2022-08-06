@@ -16,10 +16,10 @@ File | Settings | Tools | Terminal
 ```
 
 _The below options append the following to the `PATH` environment variable in any newly executed Terminal in PhpStorm._
-- `{PROJECT_ROOT}\bin`
-- `{PROJECT_ROOT}\ide\bin`
-- `{PROJECT_ROOT}\ide\vendor\bin`
-- `{PROJECT_ROOT}\vendor\bin`
+- `{PROJECT_DIR}\bin`
+- `{PROJECT_DIR}\ide\bin`
+- `{PROJECT_DIR}\ide\vendor\bin`
+- `{PROJECT_DIR}\vendor\bin`
 
 Choose one of the following, depending upon your preferred terminal.
 
