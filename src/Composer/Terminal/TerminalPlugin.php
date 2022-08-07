@@ -50,12 +50,19 @@ class TerminalPlugin implements PluginInterface, EventSubscriberInterface
         $vendorDir = $this->composer->getConfig()->get("vendor-dir");
         require $vendorDir."/autoload.php";
 
-        $status = realpath(PROJECT_DIR."/ide/terminals") ? "updated" : "installed";
+        $status = realpath($terminals = PROJECT_DIR."/.idea/terminals") ? "updated" : "installed";
 
-        if (($ide = realpath(__DIR__."/../../../ide")) && $ide !== PROJECT_DIR)
-            FileSystem::copyDir($ide, PROJECT_DIR."/ide", TRUE);
+        if (($project = realpath(__DIR__."/../../../")) && $project !== PROJECT_DIR)
+        {
 
-        $this->io->write("Terminal scripts have been $status");
+            FileSystem::copyDir($project."/.idea/terminals", $terminals, TRUE);
+            $this->io->write("Terminal scripts have been $status");
+        }
+        else
+        {
+            $this->io->write("Currently in the spaethtech/composer project, skipping!");
+            echo "TEST\n";
+        }
 
     }
 

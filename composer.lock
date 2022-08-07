@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "spaethtech/common",
-            "version": "v1.0.5",
+            "version": "v1.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spaethtech/common.git",
-                "reference": "7194db1a9c6e73f288a9a52dcd5b45ea354eb315"
+                "reference": "7d9986572dfac0197be38f19b00c1481d7934b64"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spaethtech/common/zipball/7194db1a9c6e73f288a9a52dcd5b45ea354eb315",
-                "reference": "7194db1a9c6e73f288a9a52dcd5b45ea354eb315",
+                "url": "https://api.github.com/repos/spaethtech/common/zipball/7d9986572dfac0197be38f19b00c1481d7934b64",
+                "reference": "7d9986572dfac0197be38f19b00c1481d7934b64",
                 "shasum": ""
             },
             "require": {
@@ -58,9 +58,9 @@
             "description": "A library of common classes and functions.",
             "support": {
                 "issues": "https://github.com/spaethtech/common/issues",
-                "source": "https://github.com/spaethtech/common/tree/v1.0.5"
+                "source": "https://github.com/spaethtech/common/tree/v1.0.6"
             },
-            "time": "2022-08-06T03:12:12+00:00"
+            "time": "2022-08-06T04:44:36+00:00"
         }
     ],
     "packages-dev": [
