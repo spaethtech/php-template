@@ -13,8 +13,8 @@ File | Settings | Tools | Terminal
 
 _The below options append the following to the `PATH` environment variable in any newly executed Terminal in PhpStorm._
 - `{PROJECT_DIR}\bin`
-- `{PROJECT_DIR}\.idea\bin`
-- `{PROJECT_DIR}\.idea\vendor\bin`
+- `{PROJECT_DIR}\.spaethtech\bin`
+- `{PROJECT_DIR}\.spaethtech\vendor\bin`
 - `{PROJECT_DIR}\vendor\bin`
 
 Choose one of the following, depending upon your preferred terminal.
@@ -27,7 +27,7 @@ Choose one of the following, depending upon your preferred terminal.
 ## CMD
 Shell Path
 ```
-cmd /k .idea\terminals\cmd.bat || cls
+cmd /k .spaethtech\terminals\cmd.bat || cls
 ```
 
 ## PowerShell 7
@@ -39,7 +39,7 @@ Available at [PowerShell 7](https://docs.microsoft.com/en-us/powershell/scriptin
 
 Shell Path
 ```
-pwsh -NoExit -Command ".idea\terminals\powershell.ps1 || cls"
+pwsh -NoExit -Command ".spaethtech\terminals\powershell.ps1 || cls"
 ```
 
 ## Cmder
@@ -52,7 +52,7 @@ CMDER_ROOT={CMDER_PATH}
 ```
 Shell Path
 ```
-cmd /k .idea\terminals\cmder.cmd || cls && call \"%CMDER_ROOT%\vendor\init.bat\"
+cmd /k .spaethtech\terminals\cmder.cmd || cls && call \"%CMDER_ROOT%\vendor\init.bat\"
 ```
 
 ## Git Bash
@@ -61,5 +61,5 @@ Included with the [Git for Windows](https://gitforwindows.org/) installation.
 
 Shell Path
 ```
-C:\Program Files\Git\bin\bash.exe --rcfile .idea/terminals/.bashrc
+C:\Program Files\Git\bin\bash.exe --rcfile .spaethtech/terminals/.bashrc
 ```
