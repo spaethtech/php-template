@@ -1,5 +1,5 @@
 {
-    "name": "spaethtech/composer",
+    "name": "spaethtech/php-template",
     "description": "A collection of Composer plugins and scripts.",
     "type": "composer-plugin",
     "license": "MIT",
